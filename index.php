@@ -7,6 +7,7 @@ $obj->printString($text2);
 $obj->stringLenght($text2);
 $obj->stringReverse($text2);
 $obj->stringUpper($text);
+$obj->stringShuffle($text2);
 class main {
 
 	public function __construct ()  {
@@ -43,6 +44,13 @@ class main {
 	echo '<h3> Part 1 as Upper Case </h3><br>';
 	$upper=strtoupper($text);
 	echo 'Upper Case is <br>' .$upper;
+	echo '<hr>';
+	}
+	
+	public function stringShuffle($text) {
+	echo '<h3> Randoly Shuffle a String </h3> <br>';
+	$shuffled= str_shuffle($text);
+	echo $shuffled;
 	echo '<hr>';
 	}
 
