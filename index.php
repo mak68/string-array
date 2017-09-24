@@ -11,6 +11,7 @@ $obj->stringUpper($text);
 $obj->stringShuffle($text2);
 $obj->stringSplit($text3);
 $obj->stringReplace($text3);
+$obj->stringWordcount($text);
 class main {
 
 	public function __construct ()  {
@@ -68,6 +69,13 @@ class main {
 	echo '<h3> Replace Text from Split Array </h3> <br>';
 	$replace= substr_replace ($text3, 'I am confident',0);
 	echo $replace;
+	echo '<hr>';
+	}
+	
+	public function stringWordcount($text) {
+	echo '<h3> Count Words within Text </hr><br>';
+	print_r(str_word_count($text, 1));
+	echo str_word_count($str);
 	echo '<hr>';
 	}
 
