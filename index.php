@@ -8,6 +8,7 @@ $text2="I say it's in the reach of my arms";
 $obj->printthis($text);
 $obj->printString($text2);
 $obj->stringLenght($text2);
+$obj->stringReverse($text2);
 class main {
 
 	public function __construct ()  {
@@ -27,9 +28,16 @@ class main {
 	}
 	
 	public function stringLenght($text2) {
-	echo '<h3><u> Lenght of Part 2</u></h3><br>';
+	echo '<h3><u>Lenght of Part 2</u></h3><br>';
 	$lenght=strlen($text2);
 	echo 'The lenght of the string is:'.$lenght;
+	echo '<hr>';
+	}
+	
+	public function stringReverse($text2) {
+	echo '<h3> Reversing Part 2 </h3><br>';
+	$reverse=strrev($text2);
+	echo 'Reversed Part 2 is: <br> ' .$reverse;
 	echo '<hr>';
 	}
 
