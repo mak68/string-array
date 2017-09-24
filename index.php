@@ -7,7 +7,7 @@ They think I'm telling lies.</br>";
 $text2="I say it's in the reach of my arms";
 $obj->printthis($text);
 $obj->printString($text2);
-//$obj->stringLenght($text2)
+$obj->stringLenght($text2);
 class main {
 
 	public function __construct ()  {
@@ -23,6 +23,13 @@ class main {
 	public function printString($text2) {
 	echo '<h3> Part 2 </h3>';
 	print ($text2);
+	echo '<hr>';
+	}
+	
+	public function stringLenght($text2) {
+	echo '<h3><u> Lenght of Part 2</u></h3><br>';
+	$lenght=strlen($text2);
+	echo 'The lenght of the string is:'.$lenght;
 	echo '<hr>';
 	}
 
