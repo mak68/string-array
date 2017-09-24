@@ -1,19 +1,17 @@
 <?php
 $obj= new main ();
-$text= "Pretty women wonder where my secret lies.</br>
-I'm not cute or built to suit a fashion model's size </br>
-But when I start to tell them,</br>
-They think I'm telling lies.</br>";
-$text2="I say it's in the reach of my arms";
+$text= "Practice for Web System Development Class";
+$text2="This practice will prepare me for the exam";
 $obj->printthis($text);
 $obj->printString($text2);
 $obj->stringLenght($text2);
 $obj->stringReverse($text2);
+$obj->stringUpper($text);
 class main {
 
 	public function __construct ()  {
 
-	echo 'Phenomenal Woman by Maya Angelou </br>';
+	echo 'Homework for Week 3 </br>';
 					 }
 	public function printthis ($text) {
 	echo'<h3> Part 1 </h3>';
@@ -38,6 +36,13 @@ class main {
 	echo '<h3> Reversing Part 2 </h3><br>';
 	$reverse=strrev($text2);
 	echo 'Reversed Part 2 is: <br> ' .$reverse;
+	echo '<hr>';
+	}
+	
+	public function stringUpper($text) {
+	echo '<h3> Part 1 as Upper Case </h3><br>';
+	$upper=strtoupper($text);
+	echo 'Upper Case is <br>' .$upper;
 	echo '<hr>';
 	}
 
