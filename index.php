@@ -2,12 +2,14 @@
 $obj= new main ();
 $text= "Practice for Web System Development Class";
 $text2="This practice will prepare me for the exam";
+$text3="HOPEFULLY";
 $obj->printthis($text);
 $obj->printString($text2);
 $obj->stringLenght($text2);
 $obj->stringReverse($text2);
 $obj->stringUpper($text);
 $obj->stringShuffle($text2);
+$obj->stringSplit($text3);
 class main {
 
 	public function __construct ()  {
@@ -51,6 +53,13 @@ class main {
 	echo '<h3> Randoly Shuffle a String </h3> <br>';
 	$shuffled= str_shuffle($text);
 	echo $shuffled;
+	echo '<hr>';
+	}
+	
+	public function stringSplit($text3) {
+	echo '<h3> Split text into Array</hr3><br>';
+	$arr1 = str_split($text3);
+	print_r($arr1);
 	echo '<hr>';
 	}
 
