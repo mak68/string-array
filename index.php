@@ -13,6 +13,7 @@ $obj->stringSplit($text3);
 $obj->stringReplace($text3);
 $obj->stringWordcount($text);
 $obj->stringLower($text3);
+$obj->stringSlashes($text);
 class main {
 
 	public function __construct ()  {
@@ -84,6 +85,13 @@ class main {
 	echo '<h3> Convert Text to Lower Case </h3><br>';
 	$lower= strtolower($text3);
 	echo 'This text in lowercase is: <br>' .$lower;
+	echo '<hr>';
+	}
+	
+	public function stringSlashes($text) {
+	echo '<h3> Add Slashes to Text </h3><br>';
+	$slashes = addslashes($text);
+	echo $slashes;
 	echo '<hr>';
 	}
 
