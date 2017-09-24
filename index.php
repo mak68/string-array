@@ -12,6 +12,7 @@ $obj->stringShuffle($text2);
 $obj->stringSplit($text3);
 $obj->stringReplace($text3);
 $obj->stringWordcount($text);
+$obj->stringLower($text3);
 class main {
 
 	public function __construct ()  {
@@ -76,6 +77,13 @@ class main {
 	echo '<h3> Count Words within Text </hr><br>';
 	print_r(str_word_count($text, 1));
 	echo str_word_count($str);
+	echo '<hr>';
+	}
+	
+	public function stringLower($text3) {
+	echo '<h3> Convert Text to Lower Case </h3><br>';
+	$lower= strtolower($text3);
+	echo 'This text in lowercase is: <br>' .$lower;
 	echo '<hr>';
 	}
 
