@@ -10,6 +10,7 @@ $obj->stringReverse($text2);
 $obj->stringUpper($text);
 $obj->stringShuffle($text2);
 $obj->stringSplit($text3);
+$obj->stringReplace($text3);
 class main {
 
 	public function __construct ()  {
@@ -60,6 +61,13 @@ class main {
 	echo '<h3> Split text into Array</hr3><br>';
 	$arr1 = str_split($text3);
 	print_r($arr1);
+	echo '<hr>';
+	}
+	
+	public function stringReplace($text3) {
+	echo '<h3> Replace Text from Split Array </h3> <br>';
+	$replace= substr_replace ($text3, 'I am confident',0);
+	echo $replace;
 	echo '<hr>';
 	}
 
