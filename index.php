@@ -21,11 +21,14 @@ $numbers2= array (7,8,9,10,11);
 
 $fruits= array("apple","orange","banana","kiwi","pear");
 $replacefruits= array(0=>" pinaple", 3 => "cherry");
+$colors=array(0=>'red', 1=> 'white', 2=>'blue', 3=>'purple');
+
 
 $obj->printArray($numbers);
 $obj->arrayReplace ($fruits,$replacefruits);
 $obj->arrayMerge ($numbers, $numbers2);
 $obj->arrayPush ($fruits);
+$obj->arrayKeys ($colors);
 
 class main {
 
@@ -135,6 +138,11 @@ class main {
 	echo '<hr>';
 	}
 
+	public function arrayKeys($colors) {
+	echo '<h3> Keys from the Array <h3><br>';
+	print_r(array_keys($colors, "purple"));
+	echo '<h3>';
+	}
 
 	public function __deconstruct () {
 						}
