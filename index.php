@@ -16,8 +16,14 @@ $obj->stringLower($text3);
 $obj->stringSlashes($text);
 
 $numbers = array(1,2,3,4,5,6);
-//$fruits= array(apple, orange, banana, kiwi, pear);
+//$numbers2= array ();
+//$numbers3= array("8" , "7" , "6" , "5");
+
+$fruits= array("apple","orange","banana","kiwi","pear");
+$replacefruits= array(0=>" pinaple", 3 => "cherry");
+
 $obj->printArray($numbers);
+$obj->arrayReplace ($fruits,$replacefruits);
 
 class main {
 
@@ -103,6 +109,13 @@ class main {
 	public function printArray($numbers) {
 	echo '<h3> Print the Numbers Array </h3><br>';
 	print_r($numbers);
+	echo '<hr>';
+	}
+	
+	public function arrayReplace ($fruits,$replacefruits) {
+	echo '<h3> Replace Arrays </h3><br>';
+	$output= array_replace($fruits, $replacefruits);
+	echo print_r($output);
 	echo '<hr>';
 	}
 
