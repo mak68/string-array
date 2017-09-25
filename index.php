@@ -30,6 +30,7 @@ $obj->arrayMerge ($numbers, $numbers2);
 $obj->arrayPush ($fruits);
 $obj->arrayKeys ($colors);
 $obj->arraySlice($fruits);
+$obj->arraySum($numbers);
 
 class main {
 
@@ -148,6 +149,12 @@ class main {
 	public function arraySlice($fruits) {
 	echo '<h3> Take Slice of the Array </h3>';
 	print_r(array_slice($fruits, 1, -1));
+	echo '<hr>';
+	}
+	
+	public function arraySum($numbers) {
+	echo '<h3> Sum the Values in the Array <h3><br>';
+	echo 'Sum of the array is ' . array_sum($numbers);
 	echo '<hr>';
 	}
 
