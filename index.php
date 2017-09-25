@@ -16,7 +16,7 @@ $obj->stringLower($text3);
 $obj->stringSlashes($text);
 
 $numbers = array(1,2,3,4,5,6);
-//$numbers2= array ();
+$numbers2= array (7,8,9,10,11);
 //$numbers3= array("8" , "7" , "6" , "5");
 
 $fruits= array("apple","orange","banana","kiwi","pear");
@@ -24,6 +24,7 @@ $replacefruits= array(0=>" pinaple", 3 => "cherry");
 
 $obj->printArray($numbers);
 $obj->arrayReplace ($fruits,$replacefruits);
+$obj->arrayMerge ($numbers, $numbers2);
 
 class main {
 
@@ -118,7 +119,13 @@ class main {
 	echo print_r($output);
 	echo '<hr>';
 	}
-
+	
+	public function arrayMerge($numbers, $numbers2) {
+	echo '<h3> Merge Arrays </h3><br>';
+	$output= array_merge ($numbers, $numbers2);
+	echo print_r($output);
+	echo '<hr>';
+	}
 	public function __deconstruct () {
 						}
 
