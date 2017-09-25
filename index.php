@@ -14,6 +14,11 @@ $obj->stringReplace($text3);
 $obj->stringWordcount($text);
 $obj->stringLower($text3);
 $obj->stringSlashes($text);
+
+$numbers = array(1,2,3,4,5,6);
+//$fruits= array(apple, orange, banana, kiwi, pear);
+$obj->printArray($numbers);
+
 class main {
 
 	public function __construct ()  {
@@ -92,6 +97,12 @@ class main {
 	echo '<h3> Add Slashes to Text </h3><br>';
 	$slashes = addslashes($text);
 	echo $slashes;
+	echo '<hr>';
+	}
+	
+	public function printArray($numbers) {
+	echo '<h3> Print the Numbers Array </h3><br>';
+	print_r($numbers);
 	echo '<hr>';
 	}
 
