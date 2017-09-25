@@ -25,6 +25,7 @@ $replacefruits= array(0=>" pinaple", 3 => "cherry");
 $obj->printArray($numbers);
 $obj->arrayReplace ($fruits,$replacefruits);
 $obj->arrayMerge ($numbers, $numbers2);
+$obj->arrayPush ($fruits);
 
 class main {
 
@@ -126,6 +127,15 @@ class main {
 	echo print_r($output);
 	echo '<hr>';
 	}
+	
+	public function arrayPush ($fruits) {
+	echo '<h3> Add Values to the Array <h3><br>';
+	array_push($fruits, "grapes", "mango");
+	echo print_r($fruits);
+	echo '<hr>';
+	}
+
+
 	public function __deconstruct () {
 						}
 
