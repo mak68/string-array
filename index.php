@@ -32,6 +32,8 @@ $obj->arrayKeys ($colors);
 $obj->arraySlice($fruits);
 $obj->arraySum($numbers);
 $obj->arrayResort($colors);
+$obj->arrayReverse($fruits);
+
 
 class main {
 
@@ -168,6 +170,13 @@ class main {
 	echo '<hr>';
 	}
 
+	public function arrayReverse($fruits) {
+	echo '<h3> Reverse the Array </h3><br>';
+	$reverse= array_reverse($fruits);
+	echo print_r($reverse);
+	echo '<hr>';
+	}
+	
 	public function __deconstruct () {
 						}
 
