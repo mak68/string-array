@@ -33,6 +33,7 @@ $obj->arraySlice($fruits);
 $obj->arraySum($numbers);
 $obj->arrayResort($colors);
 $obj->arrayReverse($fruits);
+$obj->arrayShuffle($numbers);
 
 
 class main {
@@ -177,6 +178,15 @@ class main {
 	echo '<hr>';
 	}
 	
+	public function arrayShuffle($numbers) {
+	echo '<h3> Shuffle the Array </h3><br>';
+	shuffle($numbers);
+	foreach ($numbers as $number) {
+		echo "$number";
+		}
+	echo '<hr>';
+	}
+
 	public function __deconstruct () {
 						}
 
