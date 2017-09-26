@@ -31,6 +31,7 @@ $obj->arrayPush ($fruits);
 $obj->arrayKeys ($colors);
 $obj->arraySlice($fruits);
 $obj->arraySum($numbers);
+$obj->arrayResort($colors);
 
 class main {
 
@@ -155,6 +156,15 @@ class main {
 	public function arraySum($numbers) {
 	echo '<h3> Sum the Values in the Array <h3><br>';
 	echo 'Sum of the array is ' . array_sum($numbers);
+	echo '<hr>';
+	}
+	
+	public function arrayResort($colors) {
+	echo '<h3> Resort the Array </h3><br>';
+	rsort($colors);
+	foreach ($colors as $key =>$val) {
+		echo "$key = $val";
+		}
 	echo '<hr>';
 	}
 
